@@ -51,7 +51,7 @@ const enviar = ref(true)
 <template>
   <main>
     <form v-if="enviar">
-      <h1>perfil</h1>
+      <h1>EU:</h1>
       <div class="row mb-4">
         <div class="col">
           <div data-mdb-input-init class="form-outline">
@@ -223,7 +223,7 @@ const enviar = ref(true)
     </form>
     <section v-else>
       <div>
-        <h2>informacoes :</h2>
+        <h2>INFOS:</h2>
         <p>Nome: {{ informacoes.nome }}</p>
         <p>Sobrenome: {{ informacoes.sobrenome }}</p>
         <p>E-mail: {{ informacoes.email }}</p>
@@ -250,16 +250,17 @@ const enviar = ref(true)
 
 <style scoped>
 main {
-  margin-left: 50%;
-  width: 70%;
+  margin-left: 30%;
+  background-color:rgb(248, 217, 116);
+
 }
 
 .separar {
-  margin-top: 5%;
+  margin-top: 60%;
   margin-bottom: 5%;
+  background-color:rgb(197, 167, 83);
+
 }
 
-form {
-  margin-top: 10%;
-}
+
 </style>
