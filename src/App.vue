@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 
-const informacoes = ref({
+const infoma = ref({
   nome: '',
   sobrenome: '',
   senha: '',
@@ -55,7 +55,7 @@ const enviar = ref(true)
       <div class="row mb-4">
         <div class="col">
           <div data-mdb-input-init class="form-outline">
-            <input type="text" class="form-control" v-model="informacoes.nome" placeholder="Nome" />
+            <input type="text" class="form-control" v-model="infoma.nome" placeholder="Nome" />
           </div>
         </div>
 
@@ -64,7 +64,7 @@ const enviar = ref(true)
             <input
               type="text"
               class="form-control"
-              v-model="informacoes.sobrenome"
+              v-model="infoma.sobrenome"
               placeholder="Sobrenome"
             />
           </div>
@@ -72,14 +72,14 @@ const enviar = ref(true)
       </div>
 
       <div data-mdb-input-init class="form-outline mb-4">
-        <input type="email" class="form-control" v-model="informacoes.email" placeholder="E-mail" />
+        <input type="email" class="form-control" v-model="infoma.email" placeholder="E-mail" />
       </div>
 
       <div data-mdb-input-init class="form-outline mb-4">
         <input
           type="password"
           class="form-control"
-          v-model="informacoes.senha"
+          v-model="infoma.senha"
           placeholder="Senha"
         />
       </div>
@@ -88,7 +88,7 @@ const enviar = ref(true)
         <input
           type="password"
           class="form-control"
-          v-model="informacoes.confirmSenha"
+          v-model="infoma.confirmSenha"
           placeholder="Confirme sua senha"
         />
       </div>
@@ -99,7 +99,7 @@ const enviar = ref(true)
           type="date"
           id="dataNasc"
           class="form-control"
-          v-model="informacoes.dataNasc"
+          v-model="infoma.dataNasc"
           placeholder="Data de nascimento"
         />
       </div>
@@ -108,18 +108,18 @@ const enviar = ref(true)
         <input
           type="text"
           class="form-control"
-          v-model="informacoes.endereco"
+          v-model="infoma.endereco"
           placeholder="Endereço"
         />
       </div>
 
       <div data-mdb-input-init class="form-outline mb-4">
-        <input type="text" class="form-control" v-model="informacoes.cidade" placeholder="Cidade" />
+        <input type="text" class="form-control" v-model="infoma.cidade" placeholder="Cidade" />
       </div>
 
       <div data-mdb-input-init class="form-outline mb-4">
         <label class="form-label" for="estado">Estado:</label>
-        <select class="form-select" id="estado" v-model="informacoes.estado">
+        <select class="form-select" id="estado" v-model="infoma.estado">
           <option v-for="estado of estados" :key="estado">{{ estado.name }}</option>
         </select>
       </div>
@@ -128,17 +128,17 @@ const enviar = ref(true)
         <p>Seus Hobbies:</p>
         <div class="form-check form-check-inline">
           <input
-            class="form-check-input"type="checkbox"id="esportes"v-model="informacoes.hobbies"value="esportes"/>
+            class="form-check-input"type="checkbox"id="esportes"v-model="infoma.hobbies"value="esportes"/>
           <label class="form-check-label" for="esportes">Esportes</label>
         </div>
         <div class="form-check form-check-inline">
           <input
-            class="form-check-input"type="checkbox"id="musica"v-model="informacoes.hobbies"value="musica"/>
+            class="form-check-input"type="checkbox"id="musica"v-model="infoma.hobbies"value="musica"/>
           <label class="form-check-label" for="musica">Música</label>
         </div>
         <div class="form-check form-check-inline">
           <input
-            class="form-check-input"type="checkbox"id="leitura"v-model="informacoes.hobbies"value="leitura"/>
+            class="form-check-input"type="checkbox"id="leitura"v-model="infoma.hobbies"value="leitura"/>
           <label class="form-check-label" for="leitura">Leitura</label>
         </div>
       </section>
@@ -147,27 +147,27 @@ const enviar = ref(true)
         <p>Linguagem:</p>
         <div class="form-check form-check-inline">
           <input
-            class="form-check-input"type="radio"id="js"value="js"v-model="informacoes.linguagens"/>
+            class="form-check-input"type="radio"id="js"value="js"v-model="infoma.linguagens"/>
           <label class="form-check-label" for="js">JavaScript</label>
         </div>
         <div class="form-check form-check-inline">
           <input
-            class="form-check-input"type="radio"id="swift"value="swift"v-model="informacoes.linguagens"/>
+            class="form-check-input"type="radio"id="swift"value="swift"v-model="infoma.linguagens"/>
           <label class="form-check-label" for="pyton">Swift</label>
         </div>
         <div class="form-check form-check-inline">
           <input
-            class="form-check-input"type="radio"id="php"value="php"v-model="informacoes.linguagens"/>
+            class="form-check-input"type="radio"id="php"value="php"v-model="infoma.linguagens"/>
           <label class="form-check-label" for="php">PHP</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input"type="radio"id="c"value="c"v-model="informacoes.linguagens"/>
+          <input class="form-check-input"type="radio"id="c"value="c"v-model="infoma.linguagens"/>
           <label class="form-check-label" for="c">C</label>
         </div>
       </section>
 
       <div data-mdb-input-init class="form-outline mb-4">
-        <textarea class="form-control"id="form6Example7"rows="4"placeholder="Biografia"v-model="informacoes.bio"></textarea>
+        <textarea class="form-control"id="form6Example7"rows="4"placeholder="Biografia"v-model="infoma.bio"></textarea>
       </div>
 
       <button
@@ -181,16 +181,16 @@ const enviar = ref(true)
     <section v-else>
       <div>
         <h2>INFOS:</h2>
-        <p>Nome: {{ informacoes.nome }}</p>
-        <p>Sobrenome: {{ informacoes.sobrenome }}</p>
-        <p>E-mail: {{ informacoes.email }}</p>
-        <p>Senha: {{ informacoes.senha }}</p>
-        <p>Endereço: {{ informacoes.endereco }}</p>
-        <p>Cidade: {{ informacoes.cidade }}</p>
-        <p>Estados: {{ informacoes.estado }}</p>
-        <p>Hobbies: {{ informacoes.hobbies }}</p>
-        <p>Linguagem: {{ informacoes.linguagens }}</p>
-        <p>Biografia: {{ informacoes.bio }}</p>
+        <p>Nome: {{ infoma.nome }}</p>
+        <p>Sobrenome: {{ infoma.sobrenome }}</p>
+        <p>E-mail: {{ infoma.email }}</p>
+        <p>Senha: {{ infoma.senha }}</p>
+        <p>Endereço: {{ infoma.endereco }}</p>
+        <p>Cidade: {{ infoma.cidade }}</p>
+        <p>Estados: {{ infoma.estado }}</p>
+        <p>Hobbies: {{ infoma.hobbies }}</p>
+        <p>Linguagem: {{ infoma.linguagens }}</p>
+        <p>Biografia: {{ infoma.bio }}</p>
       </div>
 
       <button
@@ -207,16 +207,14 @@ const enviar = ref(true)
 
 <style scoped>
 main {
-  margin-left: 30%;
+  margin-left: 25%;
   background-color:rgb(248, 217, 116);
-
+  text-align: center;
 }
 
 .opções {
-  margin-top: 60%;
-  margin-bottom: 5%;
+  margin-top: 30%;
+  margin-bottom: 50%;
   background-color:rgb(197, 167, 83);
 }
-
-
 </style>
