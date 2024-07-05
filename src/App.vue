@@ -220,5 +220,6 @@ section {
 
 .opções {
   margin-bottom: 10%;
+
 }
 </style>
