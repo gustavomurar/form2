@@ -210,11 +210,14 @@ main {
   margin-left: 25%;
   background-color:rgb(248, 217, 116);
   text-align: center;
+  border-radius: 4%;
+}
+
+section {
+  background-color:rgb(248, 217, 116);
 }
 
 .opções {
-  margin-top: 30%;
-  margin-bottom: 50%;
-  background-color:rgb(197, 167, 83);
+  margin-bottom: 10%;
 }
 </style>
