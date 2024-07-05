@@ -128,32 +128,17 @@ const enviar = ref(true)
         <p>Seus Hobbies:</p>
         <div class="form-check form-check-inline">
           <input
-            class="form-check-input"
-            type="checkbox"
-            id="esportes"
-            v-model="informacoes.hobbies"
-            value="esportes"
-          />
+            class="form-check-input"type="checkbox"id="esportes"v-model="informacoes.hobbies"value="esportes"/>
           <label class="form-check-label" for="esportes">Esportes</label>
         </div>
         <div class="form-check form-check-inline">
           <input
-            class="form-check-input"
-            type="checkbox"
-            id="musica"
-            v-model="informacoes.hobbies"
-            value="musica"
-          />
+            class="form-check-input"type="checkbox"id="musica"v-model="informacoes.hobbies"value="musica"/>
           <label class="form-check-label" for="musica">Música</label>
         </div>
         <div class="form-check form-check-inline">
           <input
-            class="form-check-input"
-            type="checkbox"
-            id="leitura"
-            v-model="informacoes.hobbies"
-            value="leitura"
-          />
+            class="form-check-input"type="checkbox"id="leitura"v-model="informacoes.hobbies"value="leitura"/>
           <label class="form-check-label" for="leitura">Leitura</label>
         </div>
       </section>
@@ -162,62 +147,34 @@ const enviar = ref(true)
         <p>Linguagem:</p>
         <div class="form-check form-check-inline">
           <input
-            class="form-check-input"
-            type="radio"
-            id="js"
-            value="js"
-            v-model="informacoes.linguagens"
-          />
+            class="form-check-input"type="radio"id="js"value="js"v-model="informacoes.linguagens"/>
           <label class="form-check-label" for="js">JavaScript</label>
         </div>
         <div class="form-check form-check-inline">
           <input
-            class="form-check-input"
-            type="radio"
-            id="swift"
-            value="swift"
-            v-model="informacoes.linguagens"
-          />
+            class="form-check-input"type="radio"id="swift"value="swift"v-model="informacoes.linguagens"/>
           <label class="form-check-label" for="pyton">Swift</label>
         </div>
         <div class="form-check form-check-inline">
           <input
-            class="form-check-input"
-            type="radio"
-            id="php"
-            value="php"
-            v-model="informacoes.linguagens"
-          />
+            class="form-check-input"type="radio"id="php"value="php"v-model="informacoes.linguagens"/>
           <label class="form-check-label" for="php">PHP</label>
         </div>
         <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="radio"
-            id="c"
-            value="c"
-            v-model="informacoes.linguagens"
-          />
+          <input class="form-check-input"type="radio"id="c"value="c"v-model="informacoes.linguagens"/>
           <label class="form-check-label" for="c">C</label>
         </div>
       </section>
 
       <div data-mdb-input-init class="form-outline mb-4">
-        <textarea
-          class="form-control"
-          id="form6Example7"
-          rows="4"
-          placeholder="Biografia"
-          v-model="informacoes.bio"
-        ></textarea>
+        <textarea class="form-control"id="form6Example7"rows="4"placeholder="Biografia"v-model="informacoes.bio"></textarea>
       </div>
 
       <button
         @click="enviar = false"
-        data-mdb-ripple-init
-        type="button"
-        class="btn btn-primary btn-block mb-4"
-      >
+        data-mdb-ripple-init 
+        type="button"class="btn btn-primary btn-block mb-4"
+        >
         ENVIAR
       </button>
     </form>
@@ -259,7 +216,6 @@ main {
   margin-top: 60%;
   margin-bottom: 5%;
   background-color:rgb(197, 167, 83);
-
 }
 
 
