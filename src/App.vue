@@ -215,6 +215,7 @@ main {
 
 section {
   background-color:rgb(248, 217, 116);
+  border-width: 500%
 }
 
 .opções {
