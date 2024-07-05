@@ -62,11 +62,7 @@ const enviar = ref(true)
         <div class="col">
           <div data-mdb-input-init class="form-outline">
             <input
-              type="text"
-              class="form-control"
-              v-model="infoma.sobrenome"
-              placeholder="Sobrenome"
-            />
+              type="text"class="form-control"v-model="infoma.sobrenome"placeholder="Sobrenome"/>
           </div>
         </div>
       </div>
@@ -77,40 +73,23 @@ const enviar = ref(true)
 
       <div data-mdb-input-init class="form-outline mb-4">
         <input
-          type="password"
-          class="form-control"
-          v-model="infoma.senha"
-          placeholder="Senha"
-        />
+          type="password"class="form-control"v-model="infoma.senha"placeholder="Senha"/>
       </div>
 
       <div data-mdb-input-init class="form-outline mb-4">
         <input
-          type="password"
-          class="form-control"
-          v-model="infoma.confirmSenha"
-          placeholder="Confirme sua senha"
-        />
+          type="password"class="form-control"v-model="infoma.confirmSenha"placeholder="Confirme sua senha"/>
       </div>
 
       <div data-mdb-input-init class="form-outline mb-4">
         <label for="dataNasc">Data de nascimento:</label>
         <input
-          type="date"
-          id="dataNasc"
-          class="form-control"
-          v-model="infoma.dataNasc"
-          placeholder="Data de nascimento"
-        />
+          type="date"id="dataNasc"class="form-control"v-model="infoma.dataNasc"placeholder="Data de nascimento"/>
       </div>
 
       <div data-mdb-input-init class="form-outline mb-4">
         <input
-          type="text"
-          class="form-control"
-          v-model="infoma.endereco"
-          placeholder="Endereço"
-        />
+          type="text"class="form-control"v-model="infoma.endereco"placeholder="Endereço"/>
       </div>
 
       <div data-mdb-input-init class="form-outline mb-4">
