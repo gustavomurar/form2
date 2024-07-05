@@ -124,7 +124,7 @@ const enviar = ref(true)
         </select>
       </div>
 
-      <section class="separar">
+      <section class="opções">
         <p>Seus Hobbies:</p>
         <div class="form-check form-check-inline">
           <input
@@ -158,8 +158,8 @@ const enviar = ref(true)
         </div>
       </section>
 
-      <section class="separar">
-        <p>Linguagem preferida:</p>
+      <section class="opções">
+        <p>Linguagem:</p>
         <div class="form-check form-check-inline">
           <input
             class="form-check-input"
@@ -218,7 +218,7 @@ const enviar = ref(true)
         type="button"
         class="btn btn-primary btn-block mb-4"
       >
-        Enviar
+        ENVIAR
       </button>
     </form>
     <section v-else>
@@ -232,7 +232,7 @@ const enviar = ref(true)
         <p>Cidade: {{ informacoes.cidade }}</p>
         <p>Estados: {{ informacoes.estado }}</p>
         <p>Hobbies: {{ informacoes.hobbies }}</p>
-        <p>Linguagem favorita: {{ informacoes.linguagens }}</p>
+        <p>Linguagem: {{ informacoes.linguagens }}</p>
         <p>Biografia: {{ informacoes.bio }}</p>
       </div>
 
@@ -242,7 +242,7 @@ const enviar = ref(true)
         type="button"
         class="btn btn-primary btn-block mb-4"
       >
-        Voltar
+        VOLTAR
       </button>
     </section>
   </main>
@@ -255,7 +255,7 @@ main {
 
 }
 
-.separar {
+.opções {
   margin-top: 60%;
   margin-bottom: 5%;
   background-color:rgb(197, 167, 83);
